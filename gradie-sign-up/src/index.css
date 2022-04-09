@@ -5,3 +5,6 @@
 @tailwind utilities;
 
 /* @apply under here */
+.theme-bg {
+  @apply font-roboto h-screen w-screen bg-bg-gradient bg-no-repeat md:bg-cover;
+}
