@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,400;1,500;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,5 +6,21 @@
 
 /* @apply under here */
 .theme-bg {
-  @apply font-sans h-screen w-screen bg-bg-gradient bg-no-repeat md:bg-cover;
+  @apply font-sans h-screen w-screen bg-bg-gradient bg-no-repeat bg-fixed bg-cover lg:bg-cover;
+}
+
+.theme-placeholder {
+  @apply placeholder:text-sm placeholder:font-sans placeholder:font-light;
+}
+
+.theme-inputs {
+  @apply border border-gray-300 rounded w-full h-10 p-2;
+}
+
+.theme-checkbox {
+  @apply mr-2 mt-1 w-4 h-4 border border-gray-300 rounded appearance-none checked:bg-blue-500;
+}
+
+.theme-btn {
+  @apply bg-theme-blue rounded font-sans font-normal text-sm w-full h-10;
 }
